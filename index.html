@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculator</title>
+    </head>
+    <body>
+    <center>
+        <h1 style="background-color: rgb(197, 159, 113);"> A Basic Calculator</h1>
+
+        <button type="button" style="background-color: rgb(1, 80, 54); color: antiquewhite;"onclick="sum()">Sum</button>
+        <p id="result1"></p>
+
+        <br>
+
+        <button type="button"
+        style="background-color:chartreuse ; color: antiquewhite;"onclick="difference()">Difference</button>
+        <p id="result2"></p>
+
+        <br>
+
+        <button type="button"
+        style="background-color:rgb(33, 41, 26) ; color: rgb(185, 156, 117);"onclick="multiply()"> Multiplication</button>
+        <p id="result3"></p>
+
+        <br>
+
+        <button type="button"
+        style="background-color:rgb(22, 43, 2) ; color: antiquewhite;"onclick="division()"> Division</button>
+        <p id="result4"></p>
+
+        <script>
+            var  x=7890;
+            var  y=34567;
+
+        function sum() {
+            document.getElementById("result1").innerHTML = x + y;
+        }
+        function difference() {
+            document.getElementById("result2").innerHTML = x - y;
+        }
+        function multiply() {
+            document.getElementById("result3").innerHTML = x * y;
+        }
+        function division() {
+            document.getElementById("result4").innerHTML = x / y;
+        }
+        </script>
+        
+
+
+    </center>
+    </body>
+</html>
